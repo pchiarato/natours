@@ -1,0 +1,14 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": "https://pchiarato@github.com/pchiarato/natours.git",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
