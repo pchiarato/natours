@@ -1,0 +1,67 @@
+// load spinner animation 
+@keyframes loader {
+    0% {
+        transform: rotate(0deg) scale(1) translate(-50%, -50%);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.2) translate(-50%, -50%);
+        opacity: .5;
+    }
+
+}
+@keyframes loader_anim {
+    0% {
+        transform: scale(.5);   
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+// end of load spinner animation
+
+/* Title Animation */
+@keyframes moveInLeft {
+    /* css rules */
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Subtitle Animation */
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80% {
+        transform: translateX(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+// discover our tour button animation
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+    80% {
+        transform: translateY(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
