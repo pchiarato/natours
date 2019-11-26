@@ -10,7 +10,10 @@
 @import "./base/utilities";
 
 @import "./components/button";
-@import "./components/loadSpinner";
+@import "./components/card";
+@import "./components/load-spinner";
+@import "./components/composition";
+@import "./components/feature-box";
 
 @import "./../layouts/grid";
 @import "./../layouts/header";
