@@ -8,6 +8,12 @@
     padding-left: 9rem;
     font-size: $default-font-size;
 
+    @include responsive(tab-port) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+
     &__shape {
         width: 15rem;
         height: 15rem;
@@ -26,9 +32,7 @@
         transform: translateX(-4rem) scale(1.4);
         transition: transform .5s;
     }
-    &__text {
-
-    }
+  
     &__caption {
         position: absolute;
         top: 50%;

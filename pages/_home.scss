@@ -2,6 +2,10 @@
     background-color: $color-light-gray-1;
     padding: 25rem 0;
     margin-top: -20vh;
+
+    @include responsive(tab-port) {
+        padding: 20rem 0;
+    }
 }
 
 .section-features {
@@ -18,23 +22,38 @@
     & > * {
         transform: skewY(7deg);
     }
+
+    @include responsive(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .section-tours {
     background-color: $color-light-gray-1;
     padding: 25rem 0 15rem 0;
     margin-top: -20vh;
+
+    @include responsive(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
 }
 
 .section-stories {
     position: relative;
     padding: 15rem 0;
-    // background-color: $color-light-gray-1;
+
+    @include responsive(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .section-book {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+    @include responsive(tab-port) {
+        padding: 10rem 0;
+    }
 }
 .book {
     background-image:linear-gradient(90deg ,rgba($color-white,.9) 0%, rgba($color-white,.9) 50%, transparent 50%), url('./../img/nat-10.jpg');
@@ -42,10 +61,31 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 
-    height: 50rem;
+
+    @include responsive(tab-land) {
+        background-image:linear-gradient(90deg ,rgba($color-white,.9) 0%, rgba($color-white,.9) 65%, transparent 65%), url('./../img/nat-10.jpg');
+        background-size: cover;
+    }
+
+    @include responsive(tab-port) {
+        background-image:linear-gradient(90deg ,rgba($color-white,.9) 0%, rgba($color-white,.9) 100%, transparent 100%), url('./../img/nat-10.jpg');
+    }
 
     &__form {
         width:50%;
         padding: 6rem;
+
+        @include responsive(tab-land) {
+            width: 65%;
+        }
+
+        @include responsive(tab-port) {
+            width: 100%;
+        }
+
     }
+}
+
+.section-extra {
+    padding: 15rem 0;
 }

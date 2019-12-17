@@ -23,15 +23,17 @@
         </div> -->
         <div class="navigation">
             <input type="checkbox" name="navi" id="navi-toggle" class="navigation__checkbox">
-            <label for="navi" class="navigation__button">MENU</label>
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
             <div class="navigation__background">&nbsp;</div>
-            <nav class="navigation__list">
+            <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link">About Natous</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Your benefits</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>1.</span> About Natous</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>2.</span> Your benefits</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>3.</span> Popular tours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>4.</span> Stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>5.</span> Book now</a></li>
                 </ul>
             </nav>
         </div>
@@ -70,6 +72,8 @@
                     
                     <div class="col-1-of-2">
                         <div class="composition">
+
+
                             <img src="./img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
                             <img src="./img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
                             <img src="./img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
@@ -109,7 +113,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-large">
                     <h2 class="heading-secondary">
                        Most Popular Tours
@@ -143,7 +147,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#modal" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +179,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$497</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#modal" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -207,7 +211,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$897</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#modal" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -301,9 +305,13 @@
                 </div>
             </section>
         </main>
-        <div class="footer">
+        <footer class="footer">
             <div class="footer__logo-box">
-                <img src="./img/logo-green-2x.png" alt="Full Logo" class="footer__logo">
+                <picture class="footer__logo">
+                    <source srcset="./img/logo-green-small-1x.png 1x, ./img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                    <img src="./img/logo-green-2x.png" srcset="./img/logo-green-1x.png 1x, ./img/logo-green-2x.png 2x" alt="Full Logo">
+                </picture>
+                
             </div>
             <div class="row">
                 <div class="col-1-of-2">
@@ -323,6 +331,26 @@
                         Credit to design Author: <a href="#" class="footer__link">Jonas Schmedtmann</a>
                     </p>
                 </div>
+            </div>
+        </footer>
+        <div class="modal" id="modal">
+            <div class="modal__content">
+                        <div class="modal__content__left">
+                            <img src="./img/nat-8.jpg" alt="tour image" class="modal__content__image">
+                            <img src="./img/nat-9-b.jpg" alt="tour image"class="modal__content__image">
+                        </div>
+                    <div class="modal__content__right">
+                        <a href="#section-tours" class="modal__close">&times;</a>
+                        <h2 class="heading-secondary u-margin-bottom-small">
+                            Start Booking Now
+                        </h2>
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            Important &ndash; Please read the terms and conditions first
+                        </h3>
+                        <p class="modal__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolores voluptatum molestias laborum culpa repellat aspernatur tenetur, illum dignissimos perferendis architecto asperiores minus deserunt ex dolorum maiores minima dicta itaque.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In omnis aliquid nisi officiis, blanditiis asperiores, deleniti dignissimos ullam harum amet rerum pariatur voluptate, distinctio reiciendis iusto nam maxime. Non, dolorum.</p>
+                        <a href="#" class="btn btn--green">Book now</a>
+                    </div>
             </div>
         </div>
         <!--
